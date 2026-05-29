@@ -1,6 +1,10 @@
 [functions]
   directory = "netlify/functions/"
 
+[build.environment]
+  # 信任代理传递的 IP
+  WALINE_TRUST_PROXY = "true"
+
 [[redirects]]
 from = "/favicon.ico"
 to = "https://zerokami.cn/favicon.ico"
